@@ -1,0 +1,19 @@
+Description - AI app that analyzes subscription and order data to generate metrics and visualizations.
+
+Data Restrictions - 
+    - No PHI
+    - No product of Signos intellectual algorithms
+
+Requirements - 
+    - Transforms to house precleaned data to ensure follow data restrictions
+    - Connection to database tables (Snowflake API)
+        - Connection will only allow access to predetermined transforms that follow data restrictions
+        - Connection will have it's own user for auditing
+    - SQL Generator - Claude
+    - Logging system to audit:
+        - Who asked what question
+        - What was the SQL generated
+        - What was the response provided
+    - Visualization engine
+    - Scheduling System?
+    - UI (Gradio)
